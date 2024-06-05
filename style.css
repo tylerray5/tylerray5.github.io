@@ -3,9 +3,15 @@ body {
   color: rgb(46, 45, 45);
   padding: 10px;
   font-family: arial;
+  font-family: Sans-serif;
+   
+
+}
+body{
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4cb92a2a-7cff-463d-9e2c-56f5bde85b46/dfe9zls-756bedd4-d499-4fdd-80b5-c41bf65a8a40.png/v1/fill/w_1600,h_900,q_80,strp/this_is_cartoon_network__2022___30th_anniversary__by_nemalki_dfe9zls-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvNGNiOTJhMmEtN2NmZi00NjNkLTllMmMtNTZmNWJkZTg1YjQ2XC9kZmU5emxzLTc1NmJlZGQ0LWQ0OTktNGZkZC04MGI1LWM0MWJmNjVhOGE0MC5wbmciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.3ZfcNW3ikB1yvP7M0oeHfHBJg4yaeE2aSMlVyWJ_LRU);
 }
 #all-contents {
-  max-width: 400px;
+  max-width: 500px;
   margin: auto;
 }
 
@@ -21,7 +27,7 @@ h1 {
   display: flex;
   align-items: center;
   color: white;
-  color: rgb(200, 15, 15);
+  color: rgb(235, 200, 200);
   flex: 1;
   margin: 0;
 }
@@ -56,11 +62,11 @@ main {
 
 /* portfolio styles */
 #interests {
-  border: 4px silver ridge;
+ 
   padding: 8px;
 }
 #borderimg3 {
-  border: 10px solid transparent;
+  border: 4px solid transparent;
   padding: 15px;
   border-image: url(border.png) 30% round;
 }
@@ -70,7 +76,7 @@ h3 {
 }
 /* portfolio styles */
 .content h1 {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 #portfolio {
@@ -91,12 +97,13 @@ h3 {
 
 #portfolio a {
   text-decoration: none;
-  color: #454545;
+  color: #252222;
 }
 
 /* portfolio styles */
 .content h1 {
   color: black;
+  color: rgb(138, 126, 126);
 }
 
 #portfolio {
@@ -112,12 +119,14 @@ h3 {
 }
 
 #portfolio li:hover {
-  background: #eee;
+  background: #3c1e1e;
 }
+
+
 
 #portfolio a {
   text-decoration: none;
-  color: #454545;
+  color: #000000;
 }
 /* responsive web design */
 @media screen and (min-width: 120px) and (max-width: 1080px) {
