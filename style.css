@@ -11,13 +11,13 @@ body{
   background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4cb92a2a-7cff-463d-9e2c-56f5bde85b46/dfe9zls-756bedd4-d499-4fdd-80b5-c41bf65a8a40.png/v1/fill/w_1600,h_900,q_80,strp/this_is_cartoon_network__2022___30th_anniversary__by_nemalki_dfe9zls-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvNGNiOTJhMmEtN2NmZi00NjNkLTllMmMtNTZmNWJkZTg1YjQ2XC9kZmU5emxzLTc1NmJlZGQ0LWQ0OTktNGZkZC04MGI1LWM0MWJmNjVhOGE0MC5wbmciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.3ZfcNW3ikB1yvP7M0oeHfHBJg4yaeE2aSMlVyWJ_LRU);
 }
 #all-contents {
-  max-width: 500px;
+  max-width: 800px;
   margin: auto;
 }
 
 /* navigation menu */
 nav {
-  background: rgb(108, 72, 63);
+  background: rgb(44, 32, 123);
   margin: 0 auto;
   margin-bottom: 20px;
   display: flex;
@@ -40,12 +40,12 @@ h1 {
 }
 a {
   text-decoration: none;
-  color: #f69393;
+  color: #040404;
 }
 
 /* main container area beneath menu */
 main {
-  background: rgb(115, 168, 170);
+  background: rgba(229, 207, 63, 0.677);
   display: flex;
 }
 .sidebar {
@@ -119,7 +119,7 @@ h3 {
 }
 
 #portfolio li:hover {
-  background: #3c1e1e;
+  background: #1e273c;
 }
 
 

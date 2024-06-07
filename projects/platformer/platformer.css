@@ -1,9 +1,12 @@
 body {
   margin: 0px;
 }
+canvas {
+  background-image: url('https://www.textures4photoshop.com/tex/thumbs/checkered-room-background-thumb25.jpg')
+}
 
 canvas {
-  background-color: lightgray;
+  background-color: rgb(255, 255, 255);
 }
 
 img {

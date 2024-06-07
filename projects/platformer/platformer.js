@@ -37,44 +37,50 @@ $(function () {
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
-    /////////////////////////////////////////////////
 
     // TODO 1
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
 
+    createPlatform(615, 450, 200, 20);
+    createPlatform(1, 330, 350, 20);
+    createPlatform(1100, 330, 475, 20);
+    createPlatform(800, 450, 20, 200);
+    createPlatform(600, 450, 20, 200);
 
-    createPlatform(565,450,200,20);
-    createPlatform(0, 330, 500, 20);
-    createPlatform(900 , 330, 500, 20)
-    createPlatform()
-    createPlatform()
-    createPlatform()
+    createPlatform(800, 630, 200, 20);
+    createPlatform(470, 630, 150, 20);
+    createPlatform(1100, 340, 20, 200);
+    createPlatform(331, 350, 20, 200);
+    createPlatform(500 , 350, 400, 20)
+    createPlatform(1200, 660, 475, 20);
+    createPlatform(1100, 530, 75, 20);
+    createPlatform(1, 660, 200, 20);
+    createPlatform(270, 530, 75, 20);
 
-    
+
     // TODO 2
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-    createCollectable("steve",500,300,20,.7);
-
-
-
+    createCollectable("steve", 700, 300, 1, 0.7);
+    createCollectable("steve", 1100, 500, 0.8, 0);
+    createCollectable("steve", 1100, 200, 0.8, 0);
+    createCollectable("steve", 300, 400, 1, 0.7);
     // TODO 3
     // Create cannons
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 
-
-
-
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
     /////////////////////////////////////////////////
   }
-
+  createCannon("left", 675, 1000);
+  createCannon("right", 500, 900);
+  createCannon("left", 100, 1000); 
   registerSetup(setup);
 });
