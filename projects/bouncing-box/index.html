@@ -73,6 +73,7 @@
         function update() {
           /* Your Code to Increase positionX by 10 HERE */
           positionX = positionX + speed;
+          console.log(speed)
           moveBoxTo(positionX);
           if (positionX > boardWidth) {
             speed = -speed;
@@ -101,7 +102,7 @@
           changeBoxText(points);
 
           points = points + 1;
-          speed = speed + 3;
+          //speed = speed + 3;
         }
         // make this an if statment
       })();
