@@ -27,6 +27,11 @@ var circle
     }
     // TODO 3 / 7 : Call the drawCircle() function
 drawCircle();
+drawCircle();
+drawCircle();
+drawCircle();
+drawCircle();
+drawCircle();
     ////////////////////////////////////////////////////////////
     ///////////////// PROGRAM LOGIC ////////////////////////////
     ////////////////////////////////////////////////////////////
@@ -37,9 +42,21 @@ drawCircle();
         and check to see if it has drifted off the screen.         
         */
     function update() {
+      physikz.updatePosition(circles[0]);
+      physikz.updatePosition(circles[1]);
+      physikz.updatePosition(circles[2]);
+      physikz.updatePosition(circles[3]);
+      physikz.updatePosition(circles[4]);
+      physikz.updatePosition(circles[5]);
       // TODO 4 : Update the circle's position //
       // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
       // TODO 9 : Iterate over the array
+      game.checkCirclePosition(circles[0])
+      game.checkCirclePosition(circles[1])
+      game.checkCirclePosition(circles[2])
+      game.checkCirclePosition(circles[3])
+      game.checkCirclePosition(circles[4])
+      game.checkCirclePosition(circles[5])
     }
 
     /* 
@@ -52,7 +69,6 @@ drawCircle();
       if (circle.x > canvas.width) {
         circle.x = 0;
       }
-
       // TODO 6 : YOUR CODE STARTS HERE //////////////////////
 
       // YOUR TODO 6 CODE ENDS HERE //////////////////////////
