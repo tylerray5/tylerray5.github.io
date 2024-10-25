@@ -11,24 +11,25 @@ function runProgram() {
   var FRAME_RATE = 60;
   var FRAMES_PER_SECOND_INTERVAL = 1000 / FRAME_RATE;
   var KEY = {
+    ENTER: 13,
     LEFT: 37,
     RIGHT: 39,
     UP: 38,
     DOWN: 40,
-    
   };
   // Game Item Objects
 
   // one-time setup
   var interval = setInterval(newFrame, FRAMES_PER_SECOND_INTERVAL); // execute newFrame every 0.0166 seconds (60 Frames per second)
   $(document).on("keydown", handleKeyDown); // change 'eventType' to the type of event you want to handle
-var walker ={
-  positionX:37,
-  positionY:50,
-  speedX:30,
-  speedY:30,
-} ;
-//var positionY = 
+  $(document).on("keyup", handleKeyup);
+  var walker = {
+    positionX: 5,
+    positionY: 5,
+    speedX: 5,
+    speedY: 5,
+  };
+  //var positionY =
 
   ////////////////////////////////////////////////////////////////////////////////
   ///////////////////////// CORE LOGIC ///////////////////////////////////////////
@@ -38,7 +39,20 @@ var walker ={
   On each "tick" of the timer, a new frame is dynamically drawn using JavaScript
   by calling this function and executing the code inside.
   */
-  function newFrame() {}
+  function newFrame(event) {
+    if (Event.which === KEY.LEFT) {
+      walker.speedX = 5;
+    }
+    if (Event.which === KEY.RIGHT) {
+      walker.speedX = 5;
+    }
+    if (Event.which === KEY.DOWN) {
+      walker.speedY = 5;
+    }
+    if (Event.which === KEY.UP) {
+      walker.speedY = 5;
+    }
+  }
 
   /* 
   Called in response to events.
@@ -57,8 +71,14 @@ var walker ={
       console.log("DOWN pressed");
     }
   }
-
- 
+  function repositionGameItem() {
+    walker.coordinateX = walker.coordinateX + walker.speedX;
+    walker.coordinateY = walker.coordinateY + walker.speedY;
+  }
+  function redrawGameItem(newFrame) {
+    $("#walker").css("left" , walker.speedX);
+    $("#walker").css("up", walker.speedY)
+  }
   ////////////////////////////////////////////////////////////////////////////////
   ////////////////////////// HELPER FUNCTIONS ////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////
