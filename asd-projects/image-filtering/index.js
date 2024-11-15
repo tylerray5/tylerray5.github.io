@@ -49,9 +49,9 @@ function applyFilter(filterFunction) {
 
 // TODO 5: Create the keepInBounds function
 function keepInBounds(bound) {
-  bound = math.max(0,bound)
-  bound = math.min(255,bound)
-  return bound
+  bound = Math.max(0, bound);
+  bound = Math.min(255, bound);
+  return bound;
 }
 //   if (bound < 0){
 // return 0
@@ -69,7 +69,10 @@ function reddify(array) {
   array[RED] = 200;
 }
 // TODO 6: Create more filter functions
-function decreaseBlue (dec){
-
+function decreaseBlue(array) {
+  array[BLUE] = keepInBounds(array[BLUE] - 50);
+}
+function increaseGreenByBlue(){
+  
 }
 // CHALLENGE code goes below here
