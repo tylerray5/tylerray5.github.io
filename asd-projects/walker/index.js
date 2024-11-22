@@ -18,7 +18,7 @@ function runProgram() {
     DOWN: 40,
   };
   // Game Item Objects
-
+function handleKeyUp (){}
   // one-time setup
   var interval = setInterval(newFrame, FRAMES_PER_SECOND_INTERVAL); // execute newFrame every 0.0166 seconds (60 Frames per second)
   $(document).on("keydown", handleKeyDown); // change 'eventType' to the type of event you want to handle
@@ -39,19 +39,10 @@ function runProgram() {
   On each "tick" of the timer, a new frame is dynamically drawn using JavaScript
   by calling this function and executing the code inside.
   */
-  function newFrame(event) {
-    if (Event.which === KEY.LEFT) {
-      walker.speedX = 5;
-    }
-    if (Event.which === KEY.RIGHT) {
-      walker.speedX = 5;
-    }
-    if (Event.which === KEY.DOWN) {
-      walker.speedY = 5;
-    }
-    if (Event.which === KEY.UP) {
-      walker.speedY = 5;
-    }
+  function newFrame() {
+    repositionGameItem ()
+    redrawGameItem()
+    
   }
 
   /* 
@@ -59,25 +50,25 @@ function runProgram() {
   */
   function handleKeyDown(event) {
     if (event.which === KEY.LEFT) {
-      console.log("LEFT pressed");
+      walker.speedX = -5;
     }
     if (event.which === KEY.RIGHT) {
-      console.log("RIGHT pressed");
+      walker.speedX = 5;
     }
     if (event.which === KEY.UP) {
-      console.log("UP pressed");
+      walker.speedY = -5;
     }
     if (event.which === KEY.DOWN) {
-      console.log("DOWN pressed");
+      walker.speedY = 5;
     }
   }
   function repositionGameItem() {
-    walker.coordinateX = walker.coordinateX + walker.speedX;
-    walker.coordinateY = walker.coordinateY + walker.speedY;
+    walker.positionX = walker.positionX + walker.speedX;
+    walker.positionY = walker.positionY + walker.speedY;
   }
   function redrawGameItem(newFrame) {
-    $("#walker").css("left" , walker.speedX);
-    $("#walker").css("up", walker.speedY)
+    $("#walker").css("left" , walker.positionX);
+    $("#walker").css("top", walker.positionY)
   }
   ////////////////////////////////////////////////////////////////////////////////
   ////////////////////////// HELPER FUNCTIONS ////////////////////////////////////

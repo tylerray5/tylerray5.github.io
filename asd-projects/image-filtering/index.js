@@ -72,7 +72,8 @@ function reddify(array) {
 function decreaseBlue(array) {
   array[BLUE] = keepInBounds(array[BLUE] - 50);
 }
-function increaseGreenByBlue(){
-  
+function increaseGreenByBlue(pit){
+
+  pit [1] + keepInBounds (pit[2])
 }
 // CHALLENGE code goes below here
